@@ -18,7 +18,7 @@ public class InterpreterTest {
                     .addTransition("ticket", EJECTED, "unlocked")
                     .addTransition("pass", "locked")
                 .addState("exception")
-                    .addTransition("ticket", "Test Autobuild", "exception")
+                    .addTransition("ticket", EJECTED, "exception")
                     .addTransition("pass", "exception")
                     .addTransition("mute", "exception")
                     .addTransition("release", "locked");
